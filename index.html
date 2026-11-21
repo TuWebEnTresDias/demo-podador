@@ -23,6 +23,7 @@
       <nav aria-label="Navegación principal">
         <a href="#servicios">Servicios</a>
         <a href="#proceso">Cómo trabajamos</a>
+        <a href="#trabajos">Nuestro trabajo</a>
       </nav>
       <a class="button button-small" href="#contacto">Pedí presupuesto</a>
     </div>
@@ -71,6 +72,29 @@
       </div>
     </section>
 
+    <section class="care band" id="cuidado" aria-labelledby="care-title">
+      <div class="wrap care-grid">
+        <figure class="feature-photo"><img src="./assets/poda.webp" width="1500" height="844" loading="lazy" alt="Podador trabajando en la copa de un árbol con equipo de protección"><figcaption>Imagen ilustrativa</figcaption></figure>
+        <div class="care-copy">
+          <p class="eyebrow">Cada árbol es distinto</p>
+          <h2 id="care-title">Cuidar el espacio empieza por <em>mirar bien.</em></h2>
+          <p>Una rama sobre el techo, un árbol que perdió fuerza o un cerco que creció demasiado necesitan soluciones diferentes. Miramos el entorno y definimos el trabajo según cada caso.</p>
+          <ul class="care-list"><li>Atención a la forma y al estado del árbol</li><li>Evaluación del acceso y los alrededores</li><li>Alcance del trabajo conversado de antemano</li></ul>
+          <a class="underlined" href="#contacto">Contanos qué necesitás</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery band" id="trabajos" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">Espacios que se disfrutan</p><h2 id="gallery-title">Más lugar para <em>estar afuera.</em></h2></div><p>Desde un patio hasta un espacio compartido, cada jardín tiene su forma. Estas imágenes muestran algunas posibilidades.</p></div>
+        <div class="gallery-grid">
+          <figure class="gallery-feature"><img src="./assets/jardin.webp" width="1500" height="844" loading="lazy" alt="Jardín con cerco prolijo y árboles frondosos"><figcaption>Jardines y cercos <span>Imagen ilustrativa</span></figcaption></figure>
+          <div class="gallery-aside"><p class="eyebrow">Un espacio más despejado</p><h3>Volvé a disfrutar de tu jardín.</h3><p>Podemos ayudarte a despejar ramas, recuperar la forma de los cercos y preparar el espacio para volver a usarlo.</p><a class="button" href="#contacto">Consultar por mi espacio</a></div>
+        </div>
+      </div>
+    </section>
+
     <section class="process band" id="proceso" aria-labelledby="process-title">
       <div class="wrap process-grid">
         <div><p class="eyebrow">Cómo trabajamos</p><h2 id="process-title">Del primer mensaje <em>al presupuesto.</em></h2></div>
@@ -96,7 +120,10 @@
         <div>
           <p class="eyebrow">Presupuesto</p>
           <h2 id="contact-title">Contanos qué <em>hay que podar.</em></h2>
-          <p>Elegí el servicio y agregá el barrio. Podés adjuntar las fotos después, en WhatsApp.</p>
+          <p class="contact-desktop-copy">Elegí el servicio y agregá el barrio. Podés adjuntar las fotos después, en WhatsApp.</p>
+          <p class="contact-mobile-copy">Escribinos por WhatsApp y contanos qué necesitás. Podés enviarnos fotos y tu localidad.</p>
+          <a class="button whatsapp-mobile" id="mobile-whatsapp" href="https://wa.me/?text=Hola%2C%20quisiera%20consultar%20por%20un%20trabajo%20de%20poda." target="_blank" rel="noopener noreferrer">Escribinos por WhatsApp</a>
+          <p class="mobile-contact-error" id="mobile-contact-error" hidden>El teléfono de este enlace de demostración no es válido.</p>
           <a class="text-link" id="direct" href="https://wa.me/?text=Hola%2C%20quisiera%20consultar%20por%20un%20trabajo%20de%20poda." target="_blank" rel="noopener noreferrer">Ir directo a WhatsApp</a>
         </div>
         <form id="quote">
@@ -124,9 +151,17 @@
   </main>
 
   <footer class="site-foot">
-    <div class="wrap foot-row">
-      <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true"></span><span><strong data-brand>Copa Sur</strong><small>Poda y arbolado</small></span></a>
-      <small>Sitio de demostración · Marca y contacto personalizables</small>
+    <div class="wrap">
+      <div class="footer-main">
+        <div class="footer-about">
+          <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true"></span><span><strong data-brand>Copa Sur</strong><small>Poda y arbolado</small></span></a>
+          <p>Poda y cuidado de espacios verdes para disfrutar de un jardín más despejado.</p>
+          <a class="footer-contact" href="#contacto">Pedí tu presupuesto</a>
+        </div>
+        <div class="footer-col"><h3>Servicios</h3><a href="#servicios">Poda de árboles</a><a href="#servicios">Evaluación y retiro</a><a href="#servicios">Cercos vivos</a></div>
+        <div class="footer-col"><h3>Explorá</h3><a href="#trabajos">Nuestro trabajo</a><a href="#proceso">Cómo trabajamos</a><a href="#preguntas">Preguntas frecuentes</a><a href="#contacto">Contacto</a></div>
+      </div>
+      <div class="footer-bottom"><small>© <span id="year">2026</span> <span data-brand>Copa Sur</span> · Poda y arbolado</small><small>Sitio de demostración · Marca y contacto personalizables</small></div>
     </div>
   </footer>
 </body>

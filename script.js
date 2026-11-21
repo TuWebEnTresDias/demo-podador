@@ -10,6 +10,9 @@ const detail = document.querySelector('#detail');
 const prepared = document.querySelector('#prepared');
 const note = document.querySelector('#contact-note');
 const direct = document.querySelector('#direct');
+const mobileWhatsapp = document.querySelector('#mobile-whatsapp');
+const mobileError = document.querySelector('#mobile-contact-error');
+document.querySelector('#year').textContent = new Date().getFullYear();
 
 if (company) {
   document.querySelectorAll('[data-brand]').forEach(element => { element.textContent = company; });
@@ -46,10 +49,13 @@ function clearPreparedMessage() {
 
 if (invalidPhone) {
   direct.hidden = true;
+  mobileWhatsapp.hidden = true;
+  mobileError.hidden = false;
   note.textContent = 'El teléfono de este enlace de demostración no es válido.';
 } else {
   note.textContent = defaultNote;
   direct.href = contactUrl('Hola, quisiera consultar por un trabajo de poda.');
+  mobileWhatsapp.href = direct.href;
   form.addEventListener('input', clearPreparedMessage);
   form.addEventListener('submit', event => {
     event.preventDefault();
