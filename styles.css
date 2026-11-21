@@ -144,7 +144,8 @@ textarea { resize: vertical; min-height: 4.6rem; }
 @media (max-width:760px) {
   .care-grid,.gallery-grid { grid-template-columns:1fr; }
   .care-grid { gap:2rem; }
-  .feature-photo img { aspect-ratio:1.25; }
+  .hero-media img, .feature-photo img, .gallery-feature img { height:auto; aspect-ratio: 16 / 10; }
+  .feature-photo img { object-position: center 45%; }
   .gallery-grid { gap:1.5rem; }
   #quote,.contact-desktop-copy,.contact #direct { display:none; }
   .contact-grid > div > .contact-mobile-copy { display:block; }
